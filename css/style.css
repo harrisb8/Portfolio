@@ -1,0 +1,350 @@
+/*Box at very top of page*/
+/*header {
+  background-color: #feeda5;
+ font-size: 12px;
+ font-weight: 400;
+ padding: 0px;
+ margin: 0px;
+ border-style: solid;
+ border-color: black;
+ height: 10px;
+}*/
+
+/*controls the li link at the top (home, work, contact, about)*/
+.page-header {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+
+/*keyes logo*/
+.logo {
+  flex: 0 1 200px;  
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+
+/* align the li (home, about, work, contact) to the right*/
+.page-header_item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+/*.navigation-list_item--active {
+  text-decoration: none;
+}*/
+
+/*controls the body of the page*/
+body {
+  font-family: 'Assistant', sans-serif;
+  font-weight:400;
+  font-size: 16px;
+  line-height: 1.6;
+ /* background-color: #feeda5;*/
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  align-content: center;
+}
+
+/*footer {
+  background-color: #feeda5;
+  font-size: 12px;
+  font-weight: 400;
+  height: 125px;
+}*/
+
+/*This places work sample side by side on work page */
+.grid-container {
+  display: grid;
+  grid: 600px/ auto auto auto;
+  grid: gap 25px;
+}
+
+/* Each work sample is organized on a single card*/
+.card {
+  height: 50;
+  width: 50;
+  background-color: #feeda5;
+  text-align: center;
+  margin: 15px;
+  padding: 15px 10px 5px;
+  border: 1px solid black;
+}
+
+/* This styles and centers the work sample images*/
+.work {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: black;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+/*.content {
+  border-style: solid;
+  border: black;
+}*/
+
+/*.about {
+  flex-direction: column;
+}*/
+
+/*link color (home, work, about, contact)*/
+a {
+  color: #feeda5;
+  text-decoration: none;
+}
+
+/*button  class color and features*/
+.button {
+  background-color: #29776c;
+  width: 70px;
+  height: 70px;
+  padding: 100px;
+  align-self: center;
+}
+
+/*container for all contact form*/
+.container {
+  background-color: #feeda5;
+  height: 600px;
+  width:600px; 
+}
+
+/*form {
+  align-items: center;
+}*/
+
+/*.standard-label {
+  align-items: center;
+}*/
+
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  color: #489c79;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  background-color: #357b70;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+}
+button:hover, button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.button, button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+  transition: 0.2s opacity;
+}
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/*styles profile picture*/
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+/*styles the main section of home page*/
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}*/
+
+/*.navigation-list {
+ list-style-type: none;
+}*/
+/*layout of home, work, contact, about, contact*/
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+/*
+@supports (display: grid) {
+  div {
+    display: grid;
+  }
+}*/
+
+/*.grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+  grid-gap: 20px;
+}*/
+
+/*.grid-item {
+  background-color: lightgrey;
+}*/
+
+:root {
+  background-color: #29776c;
+}
+/*
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr ;
+  }
+}
+@media all and (min-width:500px) and (max-width:750px){
+  .grid {
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+@media all and (max-width:750px){
+   .grid{
+     grid-gap:10px;
+   }
+  .grid_item:last-child {
+    grid-column: auto/auto;
+    grid-row: auto/auto;
+  }*/
+ 
+
+.main-navigation.page-header_item li {
+  position: relative;
+}
+.main-navigation.page-header_item a:before,
+.main-navigation.page-header_item a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: black;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+.main-navigation.page-header_item a:before
+{
+    top: 0px;
+    transform:translateY(10px);
+}
+.main-navigation.page-header_item a:after
+{
+    bottom: 0px;
+    transform:translateY(-10px);
+ }
+.main-navigation.page-header_item a:hover:before,
+.main-navigation.page-header_item a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+responsive.img {
+  background-color: inherit;
+}
+
+/*.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+.berlin-illustration {
+   margin: 0 auto;
+   display: block;
+}
+
+#delay {
+  font-size: 12px;
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 1s;
+}
+
+#delay:hover {
+  font-size: 30px;
+}*/
+
+

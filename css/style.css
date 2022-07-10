@@ -11,7 +11,7 @@
 }*/
 
 /*controls the li link at the top (home, work, contact, about)*/
-.page-header {
+/*.page-header {
   display: flex;
   width: 100%;
   height: 100%;
@@ -19,7 +19,7 @@
 }
 
 /*keyes logo*/
-.logo {
+/*.logo {
   flex: 0 1 200px;  
 }
 
@@ -31,7 +31,7 @@ img {
 }
 
 /* align the li (home, about, work, contact) to the right*/
-.page-header_item:last-child {
+/*.page-header_item:last-child {
   flex-grow: 1;
   text-align: right;
 }
@@ -41,12 +41,12 @@ img {
 }*/
 
 /*controls the body of the page*/
-body {
+/*body {
   font-family: 'Assistant', sans-serif;
   font-weight:400;
   font-size: 16px;
   line-height: 1.6;
- /* background-color: #feeda5;*/
+ /* background-color: #
   padding: 10px;
   margin: 10px;
   border: 1px solid black;
@@ -61,14 +61,14 @@ body {
 }*/
 
 /*This places work sample side by side on work page */
-.grid-container {
+/*.grid-container {
   display: grid;
   grid: 600px/ auto auto auto;
   grid: gap 25px;
 }
 
 /* Each work sample is organized on a single card*/
-.card {
+/*.card {
   height: 50;
   width: 50;
   background-color: #feeda5;
@@ -79,7 +79,7 @@ body {
 }
 
 /* This styles and centers the work sample images*/
-.work {
+/*.work {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -103,13 +103,13 @@ h1 {
 }*/
 
 /*link color (home, work, about, contact)*/
-a {
+/*a {
   color: #feeda5;
   text-decoration: none;
 }
 
 /*button  class color and features*/
-.button {
+/*.button {
   background-color: #29776c;
   width: 70px;
   height: 70px;
@@ -118,7 +118,7 @@ a {
 }
 
 /*container for all contact form*/
-.container {
+/*.container {
   background-color: #feeda5;
   height: 600px;
   width:600px; 
@@ -132,7 +132,7 @@ a {
   align-items: center;
 }*/
 
-a:hover {
+/*a:hover {
   text-decoration: none;
 }
 a:active {
@@ -173,7 +173,7 @@ button:focus,
 }
 
 /*styles profile picture*/
-.profile__portrait {
+/*.profile__portrait {
   float: left;
   width: 250px;
   margin-right: 40px;
@@ -181,7 +181,7 @@ button:focus,
 }
 
 /*styles the main section of home page*/
-.profile {
+/*.profile {
   max-width: 700px;
   margin: 0 auto;
 }
@@ -205,7 +205,7 @@ button:focus,
  list-style-type: none;
 }*/
 /*layout of home, work, contact, about, contact*/
-.navigation-list li {
+/*.navigation-list li {
   display: inline-block;
   margin-left: 15px;
 }
@@ -229,7 +229,7 @@ button:focus,
   background-color: lightgrey;
 }*/
 
-:root {
+/*:root {
   background-color: #29776c;
 }
 /*
@@ -253,7 +253,7 @@ button:focus,
   }*/
  
 
-.main-navigation.page-header_item li {
+/*.main-navigation.page-header_item li {
   position: relative;
 }
 .main-navigation.page-header_item a:before,
@@ -347,4 +347,75 @@ responsive.img {
   font-size: 30px;
 }*/
 
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+}
 
+body {
+  background-color: #C7E6D7;
+}
+
+.container {
+  background-color: #FABFB8;
+  box-shadow: 10px 10px #3F474C;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  display: flex;
+  align-content: center;
+}
+
+h3 {
+  font-family: 'Caveat', cursive;
+}
+
+.html {
+  color:orangered;
+}
+
+.css {
+  color:aqua;
+}
+
+.javascript {
+  color: yellow;
+}
+
+.node {
+  color: green;
+} 
+
+.github {
+  color: black;
+}
+
+.angular {
+  color: red;
+}
+
+.group {
+  background-color: #3F474C;
+}
+
+.header {
+  padding: 10%;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-body {
+  background-color: #FBF4B9;
+}
+
+.btn-group-vertical {
+  float: right;
+}

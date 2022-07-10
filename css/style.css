@@ -419,3 +419,15 @@ img {
 .btn-group-vertical {
   float: right;
 }
+
+.color {
+  background-color: #FABFB8;
+}
+
+.color1 {
+  background-color: #A3D49D;
+}
+
+.button {
+  color:#3F474C;
+}
